@@ -9,16 +9,49 @@ qui retourne les points de vies restants après l'attaque.
 """
 
 """
-2. Fonction qui reçoit une liste de legos et une couleur et qui le pourcentage de blocs de cette couleur
+2. Fonction qui reçoit une liste de legos et une couleur et qui reourne le pourcentage de blocs de cette couleur
 """
 
 """
-3. Fonction qui reçoit une liste de legos et qui il y a combien de blocs de chaque couleur en moyenne
+3. Fonction qui reçoit une liste de legos et qui retourne il y a combien de blocs de chaque couleur en moyenne
 """
 
 # Répartition des tâches :
 """                     a   b   c
-Nom :                   1   2   3
-Nom :                   2   3   1
-Nom :                   3   1   2
+Nom :Chris              1   2   3
+Nom :Karl Irakoze       2   3   1
+Nom :Fatoumata Maiga    3   1   2
 """
+
+
+def points (vie,defense, attaque):
+    vie = defense - attaque
+    return vie
+
+vie = float(input("nombre de points de vie?: "))
+defense = float(input("nombre de points de defense?: "))
+attaque = float(input("nombre de points de attaque?: "))
+vie=points(vie,defense,attaque)
+print(f"le nombre de points de vies restants: {vie}")
+
+#vie     | attaque |attendu | défense
+#100     |38       |62      |
+#350     |205      |145     |
+#195     |10       |185     |
+#67      |38       |29      |
+
+import pytest
+
+@pytest.mark.parametrize("")
+    ()
+
+
+
+
+
+
+
+
+couleur | pourcentage% | resultat attendu | resultat obtenu
+bleu    |  15%         | la couleur bleu  |
+                            est 15%
