@@ -52,6 +52,8 @@ import pytest
 
 
 
-couleur | pourcentage% | resultat attendu | resultat obtenu
-bleu    |  15%         | la couleur bleu  |
-                            est 15%
+"""couleur | pourcentage% | resultat attendu | resultat obtenu
+bleu    |  15%         |bleu est de 15%   |
+rouge   |  25%         |rouge est de 25%  |
+Jaune   | 30%          |jaune est de 30%  |
+vert    | 40%          |vert est de 40%   |"""
