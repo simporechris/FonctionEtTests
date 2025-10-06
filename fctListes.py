@@ -24,36 +24,28 @@ Nom :Fatoumata Maiga    3   1   2
 """
 
 
-def points (vie,defense, attaque):
-    vie = defense - attaque
-    return vie
+def points (vie,defense,attaque):
+    vie_restant= (vie+defense) - attaque
+    return vie_restant
 
-vie = float(input("nombre de points de vie?: "))
-defense = float(input("nombre de points de defense?: "))
-attaque = float(input("nombre de points de attaque?: "))
-vie=points(vie,defense,attaque)
-print(f"le nombre de points de vies restants: {vie}")
-
-#vie     | attaque |attendu | défense
-#100     |38       |62      |
-#350     |205      |145     |
-#195     |10       |185     |
-#67      |38       |29      |
-
-import pytest
-
-@pytest.mark.parametrize("")
-    ()
+if __name__=="__main__":
+    vie = float(input("nombre de points de vie?: "))
+    defense = float(input("nombre de points de defense?: "))
+    attaque = float(input("nombre de points de attaque?: "))
+    vie_restant = points(vie,defense,attaque,)
+    print(f"le nombre de points de vies restants: {vie_restant}")
 
 
+def ls_lego (couleur,pourcentage):
+    couleur = ["bleu","rouge","jaune","vert"]
+    pourcentage = ["15%","25%","20%","45%"]
+    return
+
+if __name__=="__main__":
+    couleur = str(input("quelle est la couleur?: "))
+    pourcentageindex(couleur)
 
 
 
 
 
-
-"""couleur | pourcentage% | resultat attendu | resultat obtenu
-bleu    |  15%         |bleu est de 15%   |
-rouge   |  25%         |rouge est de 25%  |
-Jaune   | 30%          |jaune est de 30%  |
-vert    | 40%          |vert est de 40%   |"""
